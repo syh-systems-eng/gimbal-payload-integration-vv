@@ -1,0 +1,53 @@
+# System Requirements Specification
+
+## 1. Purpose
+
+This document defines the system-level requirements for the EO/IR Gimbal Payload Integration System.
+
+The objective is to specify the expected behaviour of the system, including command handling, sensor operation, stabilisation, and fault handling within an integrated aircraft or UAV mission environment.
+
+---
+
+## 2. Scope
+
+The requirements cover:
+
+- Gimbal control (movement, zoom, sensor modes)
+- Integration with mission system commands
+- Tracking and situational awareness functions
+- System status and warning behaviour
+- Stabilisation under platform movement
+
+---
+
+## 3. Functional Requirements
+
+### Command and Control
+
+GP-REQ-001  
+The system shall accept and transmit movement commands (slew, pan, and tilt) to the gimbal payload.
+
+GP-REQ-002  
+The system shall generate a warning indication when movement commands are not successfully received or executed by the gimbal payload.
+
+GP-REQ-003  
+The system shall accept and transmit zoom control commands to the gimbal camera.
+
+GP-REQ-004  
+The system shall generate a warning indication when zoom control commands are not successfully executed by the gimbal payload.
+
+GP-REQ-005  
+The system shall control sensor modes and processing functions to support object detection, tracking, and display.
+
+---
+
+## 4. To Be Defined
+
+Additional requirements will be defined for:
+
+- Stabilisation behaviour
+- Tracking feedback and status reporting
+- Fault handling and degraded modes
+- Environmental robustness
+
+---
