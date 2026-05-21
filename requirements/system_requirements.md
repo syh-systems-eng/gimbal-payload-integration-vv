@@ -39,15 +39,16 @@ The system shall generate a warning indication when zoom control commands are no
 GP-REQ-005  
 The system shall control sensor modes and processing functions to support object detection, tracking, and display.
 
----
+GP-REQ-006  
+The system shall maintain stable line-of-sight and image stabilisation during aircraft movement and moderate environmental disturbances.
 
-## 4. To Be Defined
+GP-REQ-007  
+The system shall provide continuous video and tracking feedback to the mission system during normal operation and aircraft movement.
 
-Additional requirements will be defined for:
+GP-REQ-008  
+The system shall generate a warning indication when video or tracking feedback is interrupted.
 
-- Stabilisation behaviour
-- Tracking feedback and status reporting
-- Fault handling and degraded modes
-- Environmental robustness
+GP-REQ-009  
+The system shall maintain operational functionality under moderate environmental disturbances, including vibration, turbulence, and changing weather conditions.
 
 ---
