@@ -8,8 +8,9 @@ This document defines initial integration test cases for the EO/IR Gimbal Playlo
 | Requirement(s) | GP-REQ-001 |
 | Objective | Verify that movement commands from the mission system are received and executed by the gimbal playload. |
 | Preconditions | Gimbal playload is powered on and connected to the mission system. || Input | Operator sends slew, pan, and tilt commands. |
+| Input | Operator sends slew, pan, and tilt commands. |
 | Exepected Result | Gimbal moves to the commanded posisition and reports updated position status. |
-|Integration Point | Mission system → Gimbal playload |
+|Integration Point | Mission system → Gimbal payload |
 | Status | Not Run | 
 
 ## GP-TC-002 - Verify zoom command execution
@@ -37,10 +38,21 @@ This document defines initial integration test cases for the EO/IR Gimbal Playlo
 ## GP-TC-005 - Verify target tracking feedback
 | Field | Details |
 |---|---|
-| Requirement(s) | GP-REQ-007|
+| Requirement(s) | GP-REQ-007 |
 | Objective | Verify that tracking status is reported to the mission system during target tracking. |
 | Preconditions | Target tracking mode is active. |
 | Input | Operator selects a target for tracking. |
 | Expected Result | System reports tracking active status and displays tracking feedback on the mission display. |
 | Integration Point | Gimbal payload → Mission system display |
+| Status | Not Run |
+
+## GP-TC-006 - Verify movement command failure warning
+| Field | Details |
+|---|---|
+| Requirement(s) | GP-REQ-002 |
+| Objective | Verify that the system generates a warning indication when movement commands are not successfully executed by the gimbal payload. |
+| Preconditions | Mission system and gimbal payload are powered on and connected. |
+| Input | Operator sends a slew, pan, or tilt command. Simulate a communication failure or command execution failure within the gimbal payload. |
+| Expected Result | A warning indication is displayed to the pilot or mission operator. Fault status is reported to the mission system. |
+| Integration Point | Mission system → Gimbal payload → Mission system display |
 | Status | Not Run |
