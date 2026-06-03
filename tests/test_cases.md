@@ -1,4 +1,3 @@
-</> Markdown
 # Integration Test Cases
 This document defines initial integration test cases for the EO/IR Gimbal Playload Integration System.
 
@@ -53,6 +52,17 @@ This document defines initial integration test cases for the EO/IR Gimbal Playlo
 | Objective | Verify that the system generates a warning indication when movement commands are not successfully executed by the gimbal payload. |
 | Preconditions | Mission system and gimbal payload are powered on and connected. |
 | Input | Operator sends a slew, pan, or tilt command. Simulate a communication failure or command execution failure within the gimbal payload. |
+| Expected Result | A warning indication is displayed to the pilot or mission operator. Fault status is reported to the mission system. |
+| Integration Point | Mission system → Gimbal payload → Mission system display |
+| Status | Not Run |
+
+## GP-TC-007 - Verify zoom command failure warning
+| Field | Details |
+|---|---|
+| Requirement(s) | GP-REQ-004 |
+| Objective | Verify that the system generates a warning indication when zoom control commands are not successfully executed by the gimbal payload. |
+| Preconditions | Mission system and gimbal payload are powered on and connected. |
+| Input | Operator sends zoom-in and zoom-out commands. Simulate a camera malfunction or zoom command execution failure within the gimbal payload. |
 | Expected Result | A warning indication is displayed to the pilot or mission operator. Fault status is reported to the mission system. |
 | Integration Point | Mission system → Gimbal payload → Mission system display |
 | Status | Not Run |
