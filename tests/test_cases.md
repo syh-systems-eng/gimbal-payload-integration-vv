@@ -66,3 +66,15 @@ This document defines initial integration test cases for the EO/IR Gimbal Playlo
 | Expected Result | A warning indication is displayed to the pilot or mission operator. Fault status is reported to the mission system. |
 | Integration Point | Mission system → Gimbal payload → Mission system display |
 | Status | Not Run |
+
+## GP-TC-008 — Verify tracking loss warning
+
+| Field | Details |
+|---|---|
+| Requirement(s) | GP-REQ-008 |
+| Objective | Verify that the system generates a warning indication when tracking feedback is interrupted or lost. |
+| Preconditions | Mission system and gimbal payload are powered on and connected. Target tracking mode is active. |
+| Input | Operator initiates target tracking. Simulate loss of tracking data or tracking failure within the gimbal payload. |
+| Expected Result | A warning indication is displayed to the pilot or mission operator. Fault status is reported to the mission system. |
+| Integration Point | Mission system → Gimbal payload → Mission system display |
+| Status | Not Run |
