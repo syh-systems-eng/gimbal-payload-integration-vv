@@ -68,7 +68,6 @@ This document defines initial integration test cases for the EO/IR Gimbal Playlo
 | Status | Not Run |
 
 ## GP-TC-008 — Verify tracking loss warning
-
 | Field | Details |
 |---|---|
 | Requirement(s) | GP-REQ-008 |
@@ -77,4 +76,15 @@ This document defines initial integration test cases for the EO/IR Gimbal Playlo
 | Input | Operator initiates target tracking. Simulate loss of tracking data or tracking failure within the gimbal payload. |
 | Expected Result | A warning indication is displayed to the pilot or mission operator. Fault status is reported to the mission system. |
 | Integration Point | Mission system → Gimbal payload → Mission system display |
+| Status | Not Run |
+
+## GP-TC-009 — Verify Low Power Warning
+| Field | Details |
+|---|---|
+| Requirement(s) | GP-REQ-009 |
+| Objective | Verify that the system generates a low-power warning when the available power falls below 30% of nominal operating capacity and clears the warning when power is restored above the threshold. |
+| Preconditions | Mission system and gimbal payload are powered on and operating normally. Available power is greater than 30%. |
+| Input | Simulate the available power decreasing from 30% to 29%, then increasing back above 30% after recharge. |
+| Expected Result | A low-power warning is displayed when the available power falls below 30%. The warning remains active while the power level is below 30% and clears automatically once the power level is restored above the defined threshold. |
+| Integration Point | Power management subsystem → Gimbal payload → Mission system display |
 | Status | Not Run |
