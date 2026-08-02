@@ -88,3 +88,14 @@ This document defines initial integration test cases for the EO/IR Gimbal Playlo
 | Expected Result | A low-power warning is displayed when the available power falls below 30%. The warning remains active while the power level is below 30% and clears automatically once the power level is restored above the defined threshold. |
 | Integration Point | Power management subsystem → Gimbal payload → Mission system display |
 | Status | Not Run |
+
+## GP-TC-010 — Verify environmental robustness during adverse weather
+| Field | Details |
+|---|---|
+| Requirement(s) | GP-REQ-009 |
+| Objective | Verify that the gimbal payload maintains operational functionality, image stabilisation, and system status reporting during simulated adverse environmental conditions. |
+| Preconditions | Mission system and gimbal payload are powered on and operating normally. Environmental simulation is available. One environmental condition is introduced per test run. |
+| Input | Simulate adverse environmental conditions such as turbulence, heavy rain, strong wind gusts, or thunderstorms. After completing individual scenarios, execute combined environmental conditions (e.g. turbulence + heavy rain, turbulence + strong wind gusts). Vary disturbance severity from low to medium to high. |
+| Expected Result | The gimbal payload continues to provide stabilised imagery, tracking feedback, and system health status. If operational limits are exceeded, the system shall generate an appropriate warning or transition to a degraded operating mode. |
+| Integration Point | Environmental simulation → Aircraft motion/environment → Gimbal payload → Mission system display |
+| Status | Not Run |
