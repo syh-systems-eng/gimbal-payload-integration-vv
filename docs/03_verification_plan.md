@@ -1,8 +1,17 @@
 # Verification Plan
+This Verification Plan defines the approach for verifying the integration of the EO/IR gimbal payload with the aircraft or UAV mission system. Verification will cover command transmission and execution, sensor and tracking data exchange, image stabilisation, status reporting, warning behaviour, and operation under defined environmental disturbances.
+
+The plan does not cover real aircraft flight testing, certification of production hardware, verification of the gimbal's internal design, use of classified operational data, or assessment of business and defence value.
 
 ## Verification Strategy
+Verification will begin by establishing that individual interfaces and functions operate correctly under nominal conditions. This provides a known baseline and allows basic faults to be identified before more complex conditions are introduced.
 
-The EO/IR Gimbal Payload Integration System will be verified through functional testing, integration testing, fault injection testing, and environmental robustness testing.
+The gimbal and mission-system interfaces will then be verified end to end. Faults and environmental disturbances will be introduced individually so that their effects can be isolated. Combined disturbances and higher-severity conditions will be evaluated after acceptable behaviour has been demonstrated under simpler conditions. This progressive approach reduces ambiguous results and supports efficient use of test resources.
+
+## Verification Methods
+Test will be the primary verification method because most requirements describe observable system behaviour in response to commands, faults, or environmental conditions. Analysis will be used where recorded measurements must be evaluated to determine compliance, including stabilisation performance and environmental robustness. Inspection will support confirmation of interface definitions, system configuration, and required documentation. Demonstration may be used for initial confirmation of visibly observable functions.
+
+Python automation may support these methods by generating repeatable inputs, exercising boundary conditions, recording outputs, and comparing measured results with defined acceptance criteria.
 
 ---
 
