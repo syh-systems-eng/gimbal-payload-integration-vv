@@ -1,6 +1,8 @@
 # Verification Plan
 This Verification Plan defines the approach for verifying the integration of the EO/IR gimbal payload with the aircraft or UAV mission system. Verification will cover command transmission and execution, sensor and tracking data exchange, image stabilisation, status reporting, warning behaviour, and operation under defined environmental disturbances.
 
+# Purpose and Scope
+
 The plan does not cover real aircraft flight testing, certification of production hardware, verification of the gimbal's internal design, use of classified operational data, or assessment of business and defence value.
 
 ## Verification Strategy
@@ -34,6 +36,15 @@ Python automation may support these methods by generating repeatable inputs, exe
 ---
 
 ## Environmental Test Design
+
+Environmental robustness testing will be performed using progressively challenging operating conditions.
+
+| Test ID | Turbulence | Wind Gust | Rain | Expected Mode |
+|---|---|---|---|---|
+| ENV-01 | Low | None | None | Normal |
+| ENV-02 | Medium | Low | Heavy | Normal |
+| ENV-03 | High | High | Heavy | Degraded |
+| ENV-04 | Extreme | Extreme | Thunderstorm | Warning / Degraded |
 
 ## Entry Criteria
 
@@ -71,12 +82,3 @@ The verification activities will produce:
 7. Record of test failures, unexpected results, and unresolved issues.
 8. Final Test Report summarising verification status and conclusions.
 9. Python test and analysis scripts, where automation is implemented.
-
-Environmental robustness testing will be performed using progressively challenging operating conditions.
-
-| Test ID | Turbulence | Wind Gust | Rain | Expected Mode |
-|---|---|---|---|---|
-| ENV-01 | Low | None | None | Normal |
-| ENV-02 | Medium | Low | Heavy | Normal |
-| ENV-03 | High | High | Heavy | Degraded |
-| ENV-04 | Extreme | Extreme | Thunderstorm | Warning / Degraded |
