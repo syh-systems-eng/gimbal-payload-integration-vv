@@ -35,6 +35,18 @@ Python automation may support these methods by generating repeatable inputs, exe
 
 ## Environmental Test Design
 
+## Entry Criteria
+
+Verification activities may begin when:
+
+1. System requirements and test cases have been reviewed and baselined.
+2. Requirement-to-test mappings have been checked for completeness and accuracy.
+3. The mission-system and gimbal simulation environment has been configured.
+4. Required interfaces, test inputs, and fault-injection mechanisms are available.
+5. Acceptance criteria and environmental severity levels have been defined.
+6. Test results, logs, and supporting evidence can be recorded and retained.
+7. Known limitations, preconditions, and unresolved issues have been documented.
+
 Environmental robustness testing will be performed using progressively challenging operating conditions.
 
 | Test ID | Turbulence | Wind Gust | Rain | Expected Mode |
