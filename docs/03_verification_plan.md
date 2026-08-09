@@ -58,6 +58,20 @@ Verification activities may be considered complete when:
 5. Known limitations and unresolved issues have been documented in the Test Report.
 6. The overall verification status has been summarised, including any requirements that have not demonstrated compliance.
 
+## Deliverables
+
+The verification activities will produce:
+
+1. Verification Plan.
+2. System Requirements Specification.
+3. Integration Test Cases.
+4. Requirements Traceability Matrix.
+5. Verification Compliance Matrix.
+6. Test results and supporting evidence, including logs and recorded measurements.
+7. Record of test failures, unexpected results, and unresolved issues.
+8. Final Test Report summarising verification status and conclusions.
+9. Python test and analysis scripts, where automation is implemented.
+
 Environmental robustness testing will be performed using progressively challenging operating conditions.
 
 | Test ID | Turbulence | Wind Gust | Rain | Expected Mode |
