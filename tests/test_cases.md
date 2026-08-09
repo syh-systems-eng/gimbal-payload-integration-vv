@@ -34,6 +34,27 @@ This document defines initial integration test cases for the EO/IR Gimbal Playlo
 | Integration Point | Aircraft motion data → Gimbal stabilisation → Video output |
 | Status | Not Run |
 
+## GP-TC-004 — Verify image stabilisation during aircraft movement
+
+| Field | Details |
+|---|---|
+| Requirement(s) | GP-REQ-006 |
+| Objective | Verify that the gimbal payload maintains stable line-of-sight and image stabilisation during simulated aircraft movement. |
+| Preconditions | The mission system and gimbal payload are powered on and connected. Video output and stabilisation functions are active. A stationary target is visible, and aircraft movement simulation is available. |
+| Input | Establish a stationary baseline. Apply controlled pitch, roll, and yaw movements individually, followed by combined movement within the defined moderate operating range. |
+| Expected Result | The gimbal compensates for the simulated aircraft movement, maintains continuous video of the selected target, and reports valid stabilisation and system status. Recorded stabilisation measurements remain within the defined acceptance limits. |
+| Integration Point | Aircraft motion simulation → Gimbal stabilisation → Video output and status → Mission system display |
+| Evidence | Recorded video, commanded motion profile, line-of-sight or image-displacement measurements, system-status log, and test results |
+| Status | Not Run |
+
+### Acceptance Criteria Requiring Definition
+
+- Maximum permitted line-of-sight error: TBD
+- Maximum permitted image displacement or jitter: TBD
+- Maximum stabilisation recovery time: TBD
+- Moderate pitch, roll, and yaw disturbance profiles: TBD
+- Permitted video interruption: TBD
+
 ## GP-TC-005 - Verify target tracking feedback
 | Field | Details |
 |---|---|
