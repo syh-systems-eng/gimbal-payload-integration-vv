@@ -1,7 +1,7 @@
 # Verification Plan
 This Verification Plan defines the approach for verifying the integration of the EO/IR gimbal payload with the aircraft or UAV mission system. Verification will cover command transmission and execution, sensor and tracking data exchange, image stabilisation, status reporting, warning behaviour, and operation under defined environmental disturbances.
 
-# Purpose and Scope
+## Purpose and Scope
 
 The plan does not cover real aircraft flight testing, certification of production hardware, verification of the gimbal's internal design, use of classified operational data, or assessment of business and defence value.
 
