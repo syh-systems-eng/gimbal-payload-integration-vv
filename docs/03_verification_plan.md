@@ -47,6 +47,17 @@ Verification activities may begin when:
 6. Test results, logs, and supporting evidence can be recorded and retained.
 7. Known limitations, preconditions, and unresolved issues have been documented.
 
+## Exit Criteria
+
+Verification activities may be considered complete when:
+
+1. All planned test cases have been executed or recorded with a justification for not being executed.
+2. Test results and supporting evidence have been recorded and retained.
+3. Each system requirement has been assessed against its planned verification activity.
+4. Test failures and unexpected results have been documented and investigated.
+5. Known limitations and unresolved issues have been documented in the Test Report.
+6. The overall verification status has been summarised, including any requirements that have not demonstrated compliance.
+
 Environmental robustness testing will be performed using progressively challenging operating conditions.
 
 | Test ID | Turbulence | Wind Gust | Rain | Expected Mode |
