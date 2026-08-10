@@ -103,12 +103,9 @@ This document defines initial integration test cases for the EO/IR Gimbal Playlo
 | Field | Details |
 |---|---|
 | Requirement(s) | GP-REQ-009 |
-| Objective | Verify that the system generates a low-power warning when the available power falls below 30% of nominal operating capacity and clears the warning when power is restored above the threshold. |
-| Preconditions | Mission system and gimbal payload are powered on and operating normally. Available power is greater than 30%. |
-| Input | Simulate the available power decreasing from 30% to 29%, then increasing back above 30% after recharge. |
-| Expected Result | A low-power warning is displayed when the available power falls below 30%. The warning remains active while the power level is below 30% and clears automatically once the power level is restored above the defined threshold. |
-| Integration Point | Power management subsystem → Gimbal payload → Mission system display |
-| Status | Not Run |
+| Objective | Verify that the system activates an amber low-power warning at or below 30% of nominal operating capacity, retains the warning while power remains below 35%, and clears the warning when power reaches at least 35%. |
+| Input | Simulate the available power level changing through the following sequence: 36%, 31%, 30%, 29%, 31%, 34%, and 35%. |
+| Expected Result | No warning is displayed at 36% or 31%. The amber low-power warning activates at 30% and remains active at 29%, 31%, and 34%. The warning clears when the available power reaches 35%. |
 
 ## GP-TC-010 — Verify environmental robustness during adverse weather
 | Field | Details |
