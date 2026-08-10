@@ -49,6 +49,9 @@ GP-REQ-008
 The system shall generate a warning indication when video or tracking feedback is interrupted.
 
 GP-REQ-009  
-The system shall maintain operational functionality under moderate environmental disturbances, including vibration, turbulence, and changing weather conditions.
+The system shall generate a low-power warning when the available gimbal power level falls below 30% of nominal operating capacity and shall clear the warning when the power level is restored above the defined threshold.
+
+GP-REQ-010  
+The system shall maintain stabilised imagery, tracking feedback, and system-health reporting under defined environmental disturbances. When the defined operating limits are exceeded, the system shall generate a warning or transition to a degraded operating mode.
 
 ---
