@@ -17,6 +17,8 @@ The requirements cover:
 - Tracking and situational awareness functions
 - System status and warning behaviour
 - Stabilisation under platform movement
+- Gimbal power-level monitoring and low-power warning behaviour
+- Environmental robustness, warning behaviour, and degraded operation
 
 ---
 
